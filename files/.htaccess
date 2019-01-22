@@ -1,0 +1,13 @@
+#SetEnvIf Referer 127.0.0.1 internal
+#SetEnvIf Referer 192.168.137.* extern
+#SetEnvIf Referer localhost local
+#SetEnvIf Referer pln.cal domain
+#
+#<Files *>
+#	order Deny,Allow
+#	Deny from all
+#	Allow from env=internal
+#	Allow from env=extern
+#	Allow from env=local
+#	Allow from env=domain
+#</Files>

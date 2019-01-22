@@ -1,0 +1,21 @@
+/*================================================================================
+	
+================================================================================*/
+
+.user-name {
+	padding-top: 8%;
+}
+
+.vert-mid {
+	vertical-align: middle !important;
+}
+
+.modal-backdrop {
+	z-index: 1049 !important;
+}
+
+.modal-overflow {
+	overflow: hidden;
+	overflow-wrap: normal;
+	padding-right: 0 !important;
+}
