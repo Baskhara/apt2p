@@ -90,6 +90,17 @@
 			$data = array();
 
 			foreach ($db->result() as $key => $val) {
+				$uid = $this->session->userdata['logged_in']['username'];
+				$lvl = $this->session->userdata['logged_in']['level'];
+				
+				if ($val->LVL == $lvl) {
+					if ($val->USERNAME != $uid) {
+						$dis = 'hidden';
+					} else {
+						$dis = '';
+					}
+				}
+
 				$rehash = password_hash($val->PASSWORD, PASSWORD_DEFAULT);
 				$data[] = array(
 					$val->USERNAME,
@@ -98,7 +109,7 @@
 					$val->NIP,
 					$val->UNITAP,
 					$val->UNITUP,
-					'<a class="btn btn-outline-warning modalEditAkun" data-id="'.$val->NIP.'"><i class="icon-edit"></i></a> | <a class="btn btn-outline-danger modalDelAkun" data-id="'.$val->NIP.'"><i class="icon-trash"></i></a>',
+					'<a '.$dis.' class="btn btn-outline-warning modalEditAkun" data-id="'.$val->NIP.'"><i class="icon-edit"></i></a> | <a '.$dis.' class="btn btn-outline-danger modalDelAkun" data-id="'.$val->NIP.'"><i class="icon-trash"></i></a>',
 				);
 			}
 
