@@ -96,9 +96,13 @@
 				if ($val->LVL == $lvl) {
 					if ($val->USERNAME != $uid) {
 						$dis = 'hidden';
+					} else if ($val->USERNAME == $uid) {
+						$dis = '';
 					} else {
 						$dis = '';
 					}
+				} else {
+					$dis = '';
 				}
 
 				$rehash = password_hash($val->PASSWORD, PASSWORD_DEFAULT);
