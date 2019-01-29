@@ -30,9 +30,15 @@
 
 		// Read Pegawai //
 		public function getPegawai() {
-			$this->db->select('NIP,NAMA,ALAMAT,JK,JABATAN,EMAIL,TELP,UNITAP,UNITUP');
-			$this->db->from('TB_PEGAWAI');
-			return $this->db->get();
+			if ($this->uri->segment(3) == 'vpetugas') {
+				$query = $this->db->query('SELECT NIP,NAMA,ALAMAT,JK,JABATAN,EMAIL,TELP,UNITAP,UNITUP FROM TB_PEGAWAI WHERE NIP NOT IN (SELECT NIP FROM TB_AKUN)');
+			} else {
+				$this->db->select('NIP,NAMA,ALAMAT,JK,JABATAN,EMAIL,TELP,UNITAP,UNITUP');
+				$this->db->from('TB_PEGAWAI');
+				$query = $this->db->get();
+			}
+
+			return $query;
 		}
 
 		// Read Area //
