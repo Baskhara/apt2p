@@ -105,10 +105,8 @@
 					$dis = '';
 				}
 
-				$rehash = password_hash($val->PASSWORD, PASSWORD_DEFAULT);
 				$data[] = array(
 					$val->USERNAME,
-					$rehash,
 					$val->LVL,
 					$val->NIP,
 					$val->UNITAP,

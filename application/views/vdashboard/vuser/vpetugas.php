@@ -44,11 +44,10 @@
                   <?php } ?>
                   <div class="card-body collapse in">
                     <div class="card-block">
-                      <table id="tablesakun" class="table table-bordered">
+                      <table id="tablesakun" class="table table-bordered" style="width: 100%;">
                         <thead>
                           <tr>
                             <th class="vert-mid">USERNAME</th>
-                            <th class="vert-mid">PASSWORD</th>
                             <th class="vert-mid">LEVEL</th>
                             <th class="vert-mid" width="100">NIP</th>
                             <th class="vert-mid">UNITAP</th>
