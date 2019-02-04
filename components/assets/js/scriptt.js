@@ -216,7 +216,7 @@
       });
 
       $('#fm_tarif_e option[value='+vals.TARIF+']').attr('selected', true);
-      $('input[name=fm_daya]').val(vals.DAYA);
+      $('#fm_daya_e option[value='+vals.DAYA+']').attr('selected', true);
       $('#fm_kogols option[value='+vals.KOGOL+']').attr('selected', true);
       $('input[name=fm_gardu]').val(vals.GARDU);
       $('input[name=fm_koordx]').val(vals.KOORDX);

@@ -255,7 +255,30 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>DAYA</label>
-                          <input type="number" class="form-control" placeholder="DAYA" name="fm_daya" min="0">
+                          <select class="form-control" name="fm_daya">
+                            <option value="1" selected disabled>-- Pilih --</option>
+                            <option value="220">220</option>
+                            <option value="450">450</option>
+                            <option value="900">900</option>
+                            <option value="1300">1300</option>
+                            <option value="2200">2200</option>
+                            <option value="3500">3500</option>
+                            <option value="3900">3900</option>
+                            <option value="4400">4400</option>
+                            <option value="5500">5500</option>
+                            <option value="6600">6600</option>
+                            <option value="7700">7700</option>
+                            <option value="10600">10600</option>
+                            <option value="13200">13200</option>
+                            <option value="16500">16500</option>
+                            <option value="23000">23000</option>
+                            <option value="33000">33000</option>
+                            <option value="41500">41500</option>
+                            <option value="53000">53000</option>
+                            <option value="66000">66000</option>
+                            <option value="105000">105000</option>
+                            <option value="197000">197000</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -425,7 +448,30 @@
                               <div class="col-md-6">
                                 <div class="form-group">
                                   <label>DAYA</label>
-                                  <input type="number" class="form-control" placeholder="DAYA" name="fm_daya" value="">
+                                  <select class="form-control" id="fm_daya_e" name="fm_daya">
+                                    <option value="1" selected disabled>-- Pilih --</option>
+                                    <option value="220">220</option>
+                                    <option value="450">450</option>
+                                    <option value="900">900</option>
+                                    <option value="1300">1300</option>
+                                    <option value="2200">2200</option>
+                                    <option value="3500">3500</option>
+                                    <option value="3900">3900</option>
+                                    <option value="4400">4400</option>
+                                    <option value="5500">5500</option>
+                                    <option value="6600">6600</option>
+                                    <option value="7700">7700</option>
+                                    <option value="10600">10600</option>
+                                    <option value="13200">13200</option>
+                                    <option value="16500">16500</option>
+                                    <option value="23000">23000</option>
+                                    <option value="33000">33000</option>
+                                    <option value="41500">41500</option>
+                                    <option value="53000">53000</option>
+                                    <option value="66000">66000</option>
+                                    <option value="105000">105000</option>
+                                    <option value="197000">197000</option>
+                                  </select>
                                 </div>
                               </div>
                             </div>
