@@ -27,7 +27,7 @@
                 "paragonie/random_compat": "^1.4|^2.0",
                 "php": "^5.6 || ~7.0.0 || ~7.1.0 || ~7.2.0",
                 "psr/log": "^1.0",
-                "setasign/fpdi": "1.6.*"
+                "setasign/fpdi": "2.6.*"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.5",
